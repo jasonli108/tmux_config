@@ -1,0 +1,55 @@
+[user]
+    name = JasonLi108
+    email = jasonli108@gmail.com
+
+[init]
+    defaultBranch = master
+
+[credential "https://github.com"]
+    helper = !gh auth git-credential
+
+[core]
+    pager = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[include]
+    path = ~/.my-tmux-repo/delta-themes.gitconfig
+
+[delta]
+    syntax-theme = Dracula
+    true-color = always
+    
+    # Text colors: 'syntax' keeps the code highlighting
+    # Backgrounds: #343746 (slightly lighter than base), #44475a (standard selection)
+    
+    # Removed lines: Subtle dark red bg, bright red line numbers
+    minus-style = syntax "#343746"
+    minus-emph-style = syntax "#620000" 
+    
+    # Added lines: Subtle dark green bg, bright green line numbers
+    plus-style = syntax "#343746"
+    plus-emph-style = syntax "#004400"
+
+    # Line Numbers (Dracula standard)
+    line-numbers = true
+    line-numbers-minus-style = "#ff5555"
+    line-numbers-plus-style = "#50fa7b"
+    line-numbers-zero-style = "#6272a4"
+    line-numbers-left-style = "#6272a4"
+    line-numbers-right-style = "#6272a4"
+    
+    # Structural UI
+    side-by-side = true
+    navigate = true
+    file-style = "#8be9fd" bold
+    file-decoration-style = "#8be9fd" ul
+    hunk-header-style = syntax
+    hunk-header-decoration-style = "#bd93f9" box
+    commit-decoration-style = "#f1fa8c" box
+
+    keep-plus-minus-markers = true
+    # Change from "#f1fa8c" box to just the color
+    commit-style = "#f1fa8c" bold
+    commit-decoration-style = none
