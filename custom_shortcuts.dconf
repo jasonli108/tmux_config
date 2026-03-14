@@ -1,0 +1,46 @@
+[custom0]
+command='gnome-terminal'
+name='terminal'
+
+[custom1]
+binding=''
+command='GTK_IM_MODULE=xim google-chrome-beta'
+name='chrome with gtk im module'
+
+[custom2]
+binding='<Alt>f'
+command='firefox -p yuheng108'
+name='firefox'
+
+[custom3]
+command='gnome-terminal -e "/home/yuheng108/start_chrome.sh"'
+name='chrome with gtk env'
+
+[custom4]
+binding='<Alt>b'
+command='google-chrome-beta'
+name='google-chrome-beta'
+
+[custom5]
+command='conky -c /home/yuheng108/.conky/conky_system'
+name='conky'
+
+[custom6]
+binding='<Super>Launch9'
+command='sudo systemctl hibernate -i'
+name='hibernate'
+
+[custom7]
+binding='<Super>g'
+command='google-chrome'
+name='google chrome'
+
+[custom8]
+binding='<Alt>c'
+command='google-chrome-canary'
+name='google-chrome-canary'
+
+[custom9]
+binding='<Alt>t'
+command='alacritty'
+name='alacritty'
